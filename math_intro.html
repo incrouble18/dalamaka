@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math Challenge - Introduction</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      color: white;
+    }
+    
+    .icon img {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 5px;
+    }
+    
+    .battle-icon i {
+      font-size: 40px;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="icon-bar">
+      <div class="icon" data-action="games">
+        <img src="games.png" alt="Games">
+        <span>Games</span>
+      </div>
+      <div class="icon" data-action="inventory">
+        <img src="inventory.png" alt="Inventory">
+        <span>Inventory</span>
+      </div>
+      <div class="icon" data-action="room">
+        <img src="room.png" alt="Room">
+        <span>Room</span>
+      </div>
+      <div class="icon" data-action="stats">
+        <img src="stats.png" alt="Stats">
+        <span>Stats</span>
+      </div>
+      <div class="battle-icon" data-action="battle">
+        <i>⚔️</i>
+        <span>Battle</span>
+      </div>
+    </div>
+    
+    <div class="intro-content">
+      <h1>MATH CHALLENGE</h1>
+      
+      <div class="intro-text">
+        <p>Test your mental math skills and earn rewards!</p>
+        <p>You'll have 60 seconds to solve as many math problems as you can.</p>
+        <p>Each correct answer earns you points and increases your score multiplier.</p>
+        <p>Wrong answers will reset your multiplier, so be careful!</p>
+      </div>
+      
+      <div class="difficulty-selection">
+        <h2>Select Difficulty:</h2>
+        <div class="difficulty-buttons">
+          <button id="easy" class="difficulty-button">Easy</button>
+          <button id="medium" class="difficulty-button">Medium</button>
+          <button id="hard" class="difficulty-button">Hard</button>
+        </div>
+      </div>
+      
+      <div class="button-container">
+        <button id="start-math" class="action-button">Start Challenge</button>
+        <button onclick="window.location.href='index.html'" class="back-button">Back to Hub</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="math_intro.js"></script>
+  <script src="stats.js"></script>
+  <script src="theme_switcher.js"></script>
+</body>
+</html>
